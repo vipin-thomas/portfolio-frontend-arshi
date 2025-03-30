@@ -32,7 +32,7 @@ export default function Home() {
         <motion.img
           src={profilePic}
           alt="Vipin Thomas"
-          className="w-40 h-40 rounded-full border-4 border-white shadow-lg mb-4"
+          className="w-41 h-40 rounded-full border-4 border-white shadow-lg mb-4"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8 }}
