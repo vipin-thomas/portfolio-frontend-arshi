@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
-import vtLogo from "./assets/vt-logo.png";
 
 export default function App() {
   return (
@@ -11,14 +10,9 @@ export default function App() {
       <div className="min-h-screen bg-gray-900 text-white font-sans">
         {/* Navbar */}
         <header className="flex items-center justify-between px-6 py-4 border-b border-gray-700">
-          <Link to="/">
-            <img
-              src={vtLogo}
-              alt="VT Logo"
-              className="w-15 h-10 rounded-full hover:scale-105 transition-transform"
-            />
-          </Link>
+          <h1 className="text-xl font-bold">Vipin Thomas</h1>
           <nav className="space-x-6">
+            <Link to="/" className="hover:text-teal-400">Home</Link>
             <Link to="/about" className="hover:text-teal-400">About</Link>
             <Link to="/contact" className="hover:text-teal-400">Contact</Link>
           </nav>
