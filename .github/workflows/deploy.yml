@@ -47,6 +47,7 @@ jobs:
           username: ${{ secrets.REMOTE_USER }}
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
+            export KUBECONFIG=/etc/rancher/k3s/k3s.yaml      
             kubectl delete deployment portfolio-frontend --ignore-not-found
             kubectl delete service portfolio-frontend --ignore-not-found
             kubectl apply -f /home/ubuntu/portfolio-k8s/deployment.yaml
