@@ -48,6 +48,6 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           script: |
             docker pull ${{ secrets.DOCKERHUB_USERNAME }}/portfolio-arshi:latest
-            docker stop portfolio-arshi || true
-            docker rm portfolio-arshi || true
+            docker stop portfolio || true
+            docker rm portfolio || true
             docker run -d --name portfolio-arshi -p 3000:80 ${{ secrets.DOCKERHUB_USERNAME }}/portfolio-arshi:latest
