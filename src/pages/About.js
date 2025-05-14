@@ -18,7 +18,7 @@ export default function About() {
   const paragraphs = [
     "Hi, I’m Arshi, and yes, I sleep a LOT. It’s not laziness; it’s a lifestyle. Naps are my love language. When I'm not catching up on my beauty sleep, you’ll find me in the kitchen, because I'm basically a world-class chef (don't question it).",
     "I might be 28, but honestly, I’m still 16 at heart—especially when it comes to my mood swings. One minute I’m fine, the next I’m overthinking whether my flight is going to get hijacked on my way home... again.",
-    "Oh, and if you mention cockroaches in my presence, just know I’ll go full-on ninja mode to eliminate them. I’m also addicted to compliments, so feel free to tell me how amazing I am at any given moment (you won’t be wrong). I might get anxious over the smallest things, but hey, I’m hot, so that’s my one free pass in life. 😎"
+    "Oh, and if you mention cockroaches in my presence, just know I’ll go full-on ninja mode to eliminate them. I’m also addicted to compliments, so feel free to tell me how amazing I am at any given moment (you won’t be wrong). I might get anxious over the smallest things, but hey, I’m really hot, so that’s my one free pass in life. 😎"
   ];
 
   return (

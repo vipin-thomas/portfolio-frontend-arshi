@@ -44,7 +44,7 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
         >
-          Sleep expert and Roach killer
+          Sleep enthusiast and Roach killer
         </motion.p>
       </div>
 
