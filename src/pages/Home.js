@@ -31,7 +31,7 @@ export default function Home() {
       <div className="relative z-10 flex flex-col items-start justify-start h-full px-8 py-6">
         <motion.img
           src={profilePic}
-          alt="Vipin Thomas"
+          alt="Fathimath Arsheeda aka Arshi"
           className="w-41 h-40 rounded-full border-4 border-white shadow-lg mb-4"
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
@@ -51,7 +51,7 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.5 }}
         >
-          Cloud and DevOps Enthusiast
+          Sleep expert and Roach killer
         </motion.p>
       </div>
 
