@@ -1,5 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
+import profileImg from "../assets/arshi.jpg"; // Adjust the path to your actual image
 
 const paragraphVariants = {
   hidden: { opacity: 0, y: 20 },
@@ -15,32 +16,40 @@ const paragraphVariants = {
 
 export default function About() {
   const paragraphs = [
-    "Hey there! I’m Vipin Thomas, a Linux systems engineer based in Kerala, India, with over 7 years of experience keeping servers happy and secure. I’ve spent most of my career working in server administration and web hosting support—making sure websites stay online, optimized, and secure.",
-    "Over the past few years, I’ve been diving deep into the world of DevOps through hands-on home lab projects. I’ve built CI/CD pipelines, containerized apps with Docker, deployed them using Kubernetes, and provisioned cloud infrastructure with Terraform on AWS. It’s been an exciting journey of learning, tinkering, and solving problems the DevOps way.",
-    "I’m all about continuously improving systems and automating the boring stuff—whether that’s writing a Bash script, setting up monitoring dashboards, or tweaking infrastructure as code.",
-    "When I’m not in front of a terminal, you’ll probably find me traveling, catching a good movie, or lost in some great music."
+    "Hi, I’m Arshi, and yes, I sleep a LOT. It’s not laziness; it’s a lifestyle. Naps are my love language. When I'm not catching up on my beauty sleep, you’ll find me in the kitchen, because I'm basically a world-class chef (don't question it).",
+    "I might be 28, but honestly, I’m still 16 at heart—especially when it comes to my mood swings. One minute I’m fine, the next I’m overthinking whether my flight is going to get hijacked on my way home... again.",
+    "Oh, and if you mention cockroaches in my presence, just know I’ll go full-on ninja mode to eliminate them. I’m also addicted to compliments, so feel free to tell me how amazing I am at any given moment (you won’t be wrong). I might get anxious over the smallest things, but hey, I’m hot, so that’s my one free pass in life. 😎"
   ];
 
   return (
     <motion.section
-      className="px-6 py-12 max-w-3xl mx-auto text-left"
+      className="px-6 py-12 max-w-5xl mx-auto"
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.6 }}
     >
-      <h3 className="text-3xl font-semibold mb-6">About Me</h3>
-      {paragraphs.map((text, i) => (
-        <motion.p
-          key={i}
-          className="text-gray-300 mb-4 leading-relaxed"
-          custom={i}
-          initial="hidden"
-          animate="visible"
-          variants={paragraphVariants}
-        >
-          {text}
-        </motion.p>
-      ))}
+      <div className="flex flex-col md:flex-row items-start gap-8">
+        <img
+          src={profileImg}
+          alt="Arshi"
+          className="w-40 h-65 rounded-full object-cover shadow-lg"
+        />
+        <div>
+          <h3 className="text-3xl font-semibold mb-6 text-white">About Me</h3>
+          {paragraphs.map((text, i) => (
+            <motion.p
+              key={i}
+              className="text-gray-300 mb-4 leading-relaxed"
+              custom={i}
+              initial="hidden"
+              animate="visible"
+              variants={paragraphVariants}
+            >
+              {text}
+            </motion.p>
+          ))}
+        </div>
+      </div>
     </motion.section>
   );
 }

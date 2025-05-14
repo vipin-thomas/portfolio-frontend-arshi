@@ -1,13 +1,6 @@
 import React from "react";
 import { motion } from "framer-motion";
 import profilePic from "../assets/profile.jpg";
-import linux from "../assets/linux.png";
-import github from "../assets/github.png";
-import docker from "../assets/docker.png";
-import aws from "../assets/aws.png";
-import kubernetes from "../assets/kubernetes.png";
-import terraform from "../assets/terraform.png";
-import ansible from "../assets/ansible.png";
 
 export default function Home() {
   return (
@@ -43,7 +36,7 @@ export default function Home() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ delay: 0.3 }}
         >
-          Vipin Thomas
+          Arshi
         </motion.h2>
         <motion.p
           className="text-teal-300 text-lg"
@@ -55,17 +48,6 @@ export default function Home() {
         </motion.p>
       </div>
 
-      {/* Bottom Icons */}
-      <div className="absolute bottom-4 w-full flex justify-center gap-6 z-10">
-        {[linux, github, docker, aws, kubernetes, terraform, ansible].map((icon, index) => (
-          <img
-            key={index}
-            src={icon}
-            alt="tech-icon"
-            className="w-20 h-20 opacity-80 hover:opacity-100 transition duration-300"
-          />
-        ))}
-      </div>
     </div>
   );
 }
